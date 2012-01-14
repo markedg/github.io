@@ -1,0 +1,64 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"><!-- InstanceBegin template="/Templates/index.dwt" codeOutsideHTMLIsLocked="false" -->
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<!-- InstanceBeginEditable name="doctitle" -->
+<title>Gallery | The Balaton Monks</title>
+<!-- InstanceEndEditable -->
+<link href="favicon.png" rel="shortcut icon" type="image/png"/>
+<!-- InstanceBeginEditable name="style" -->
+<style>
+body {
+	text-align: center;
+}
+#thumbnailCenter {
+	padding-left: 50%;
+}
+#thumbnails {
+	text-align: left;
+	width: 640px;
+	margin-left: -320px;
+}
+#thumbnails img {
+	cursor:pointer;
+	margin: 3px;
+}
+.unselected {
+	border:2px solid black;
+}
+.selected {
+	border:2px solid #eeeedd;
+}
+#largeImg img {
+	border:1px solid #eeeedd;
+	margin: 15px;
+}	
+		
+</style>
+<script type="text/javascript" src="dojo-release-1.0.2/dojo/dojo.js" djconfig="parseOnLoad:false, usePlainJson:true"></script>
+<script type="text/javascript" src="dojo-release-1.0.2/dojo/data/ItemFileReadStore.js"></script>
+<script type="text/javascript" src="javascript/gallery.js"></script>	
+<!-- InstanceEndEditable -->
+<link href="css/BalatonMonks.css" rel="stylesheet" type="text/css" media="screen"/>
+
+<!-- InstanceBeginEditable name="head" --><!-- InstanceEndEditable -->
+</head>
+
+<body>
+<!-- InstanceBeginEditable name="body" -->
+<div id="container">
+<h1>The Balaton Monks</h1>
+<h3>Gallery</h3>
+<div jsId="imageItemStore" dojoType="dojo.data.ItemFileReadStore" url="gallery.json"></div>
+<div id="thumbnailCenter">
+	<div id="thumbnails"></div>
+</div>
+<div id="largeImg"></div>
+<div class="footerLinks">
+<a href="index.html">Home</a>
+</div>
+</div>
+
+<!-- InstanceEndEditable -->
+</body>
+<!-- InstanceEnd --></html>

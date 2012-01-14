@@ -1,0 +1,43 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+	<title>Testing dojox.image.SlideShow</title>
+	<style type="text/css">
+		@import "../dojo-release-1.0.2/dojox/image/resources/image.css";
+	</style>
+	
+	<script type="text/javascript" src="../dojo-release-1.0.2/dojo/dojo.js" djconfig="parseOnLoad:false"></script>
+
+	<script type="text/javascript" src="../dojo-release-1.0.2/dojox/image/SlideShow.js"></script>
+	<script type="text/javascript" src="../dojo-release-1.0.2/dojo/data/ItemFileReadStore.js"></script>	
+
+	<script type="text/javascript">
+		dojo.require("dojo.parser");	// find widgets		
+		
+		dojo.addOnLoad(function(){
+			//Initialize the first SlideShow with an ItemFileReadStore
+			dojo.parser.parse(dojo.body());
+			dijit.byId('slideshow1').setDataStore(imageItemStore,
+				{ query: {}, count:20 },
+				{
+					imageThumbAttr: "thumb",
+					imageLargeAttr: "large"
+				}
+			);
+			
+			handler = dojo.subscribe(
+    			dijit.byId('slideshow1').getShowTopicName(),
+    			function(packet) {
+					dojo.unsubscribe(handler);
+					setTimeout(dojo.hitch(dijit.byId('slideshow1'), "toggleSlideShow"), dijit.byId('slideshow1').slideshowInterval * 1000);
+			});
+		});
+			
+	</script>
+</head>
+<body>
+	<div jsId="imageItemStore" dojoType="dojo.data.ItemFileReadStore" url="images.json"></div>
+	<div id="slideshow1" dojoType="dojox.image.SlideShow" hasNav="false" noLink="true"></div>
+</body>
+</html>

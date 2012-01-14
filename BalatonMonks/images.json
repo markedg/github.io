@@ -1,0 +1,56 @@
+{ items: [
+	{
+	 "large":"images/Sopron.jpg",
+	 "thumb":"images/Sopron.jpg",
+	 "link" :"images/Sopron.jpg",
+	 "title":"The boys commiserate with Andrew over his recent breakup"
+	},
+	{
+	 "thumb":"images/Bianka1.jpg",
+	  "large":"images/Bianka1.jpg",
+	  "title":"Bianka (Bianka Magyar) welcomes the boys",
+	  "link":"images/Bianka1.jpg"
+	},
+	{
+	 "large":"images/Fishing-1.jpg",
+	 "thumb":"images/Fishing-1.jpg",
+	 "link" :"images/Fishing-1.jpg",
+	 "title":"The three boys fish without success"
+	},
+	{
+	  "thumb":"images/Bianka2.jpg",
+	  "large":"images/Bianka2.jpg",
+	  "title":"Bianka (Bianka Magyar) talks with Andrew (Endre Andras Simon)",
+	  "link":"images/Bianka2.jpg"
+	},
+	{
+	  "thumb":"images/argument.jpg",
+	  "large":"images/argument.jpg",
+	  "title":"The three monks argue over Bianka",
+	  "link":"images/argument.jpg"
+	},
+	{
+	 "large":"images/hill.jpg",
+	 "thumb":"images/hill.jpg",
+	 "link" :"images/hill.jpg",
+	 "title":"A meditative moment on a hill above Lake Balaton"
+	},
+	{
+	 "large":"images/Fishing-2.jpg",
+	 "thumb":"images/Fishing-2.jpg",
+	 "link" :"images/Fishing-2.jpg",
+	 "title":"Fishing redux"
+	},
+	{
+	 "thumb":"images/Bianka3.jpg",
+	  "large":"images/Bianka3.jpg",
+	  "title":"Bianka (Bianka Magyar) invites the boys to go swimming",
+	  "link":"images/Bianka3.jpg"
+	},
+	{
+	 "large":"images/Quartet.jpg",
+	 "thumb":"images/Quartet.jpg",
+	 "link" :"images/Quartet.jpg",
+	 "title":"The cast: David Ternyak, Istvan Wosinski, Endre Andras Simon, and Bianka Magyar"
+	}
+]}

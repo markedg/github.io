@@ -1,0 +1,67 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<meta name="verify-v1" content="hT/+0ghRFoK6/5sYXbHjsjTPmbw5IkfZKaKMMst4gWA=" />
+<title>The Balaton Monks</title>
+<link href="favicon.png" rel="shortcut icon" type="image/png"/>
+<style>
+</style>
+	<style type="text/css">
+		@import "dojo-release-1.0.2/dojox/image/resources/image.css";
+	</style>
+	
+	<script type="text/javascript" src="dojo-release-1.0.2/dojo/dojo.js" djconfig="parseOnLoad:false, usePlainJson:true"></script>
+
+	<script type="text/javascript" src="dojo-release-1.0.2/dojox/image/SlideShow.js"></script>
+	<script type="text/javascript" src="dojo-release-1.0.2/dojo/data/ItemFileReadStore.js"></script>	
+
+	<script type="text/javascript">
+		dojo.require("dojo.parser");	// find widgets		
+		
+		dojo.addOnLoad(function(){
+			//Initialize the first SlideShow with an ItemFileReadStore
+			dojo.parser.parse(dojo.body());
+			dijit.byId('slideshow1').setDataStore(imageItemStore,
+				{ query: {}, count:20 },
+				{
+					imageThumbAttr: "thumb",
+					imageLargeAttr: "large"
+				}
+			);
+			
+			handler = dojo.subscribe(
+    			dijit.byId('slideshow1').getShowTopicName(),
+    			function(packet) {
+					dojo.unsubscribe(handler);
+					setTimeout(dojo.hitch(dijit.byId('slideshow1'), "toggleSlideShow"), dijit.byId('slideshow1').slideshowInterval * 1000);
+			});
+		});
+			
+	</script>
+<link href="css/BalatonMonks.css" rel="stylesheet" type="text/css" media="screen"/>
+
+</head>
+
+<body>
+<div id="container">
+<h1>The Balaton Monks</h1>
+<h3>A film by Mark Edgington</h3>
+<div id="slideshowContainer">
+	<div jsId="imageItemStore" dojoType="dojo.data.ItemFileReadStore" url="images.json"></div>
+	<div id="slideshow1" dojoType="dojox.image.SlideShow" hasNav="false" imageWidth="642" noLink="true"></div>
+</div>
+<ul>
+	<li><a href="synopsis.html">Synopsis</a></li>
+	<li>
+		<a href="credits.html">Credits</a>
+    </li>
+    <li><a href="bio.html">Filmmaker's Bio</a></li>
+    <li><a href="gallery.html">Gallery</a></li>
+    <li><a href="screenings.html">Screenings</a></li>
+    <li><a href="dialog_list.html">Dialogue List</a></li>
+    <li><a href="contact.html">Contact</a></li>
+</ul>
+</div>
+</body>
+</html>

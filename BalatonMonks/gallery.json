@@ -1,0 +1,86 @@
+{ items: [
+	{
+	 "thumb":"images/thumbnails/Sopron.jpg",
+	 "large":"images/Sopron.jpg",
+	 "link" :"images/Sopron.jpg",
+	 "title":"The boys commiserate with Andrew over his recent breakup."
+	},
+	{
+	 "thumb":"images/thumbnails/Bianka1.jpg",
+	  "large":"images/Bianka1.jpg",
+	  "title":"Bianka (Bianka Magyar) welcomes the boys.",
+	  "link":"images/Bianka1.jpg"
+	},
+	{
+	 "thumb":"images/thumbnails/Fishing-1.jpg",
+	 "large":"images/Fishing-1.jpg",
+	 "link" :"images/Fishing-1.jpg",
+	 "title":"The fishing is slow."
+	},
+	{
+	  "thumb":"images/thumbnails/Bianka2.jpg",
+	  "large":"images/Bianka2.jpg",
+	  "title":"Bianka (Bianka Magyar) talks with Andrew (Endre Andras Simon).",
+	  "link":"images/Bianka2.jpg"
+	},
+	{
+	  "thumb":"images/thumbnails/argument.jpg",
+	  "large":"images/argument.jpg",
+	  "title":"The three monks argue over Bianka.",
+	  "link":"images/argument.jpg"
+	},
+	{
+	 "thumb":"images/thumbnails/hill.jpg",
+	 "large":"images/hill.jpg",
+	 "link" :"images/hill.jpg",
+	 "title":"A meditative moment on a hill above Lake Balaton."
+	},
+	{
+	 "thumb":"images/thumbnails/Fishing-2.jpg",
+	 "large":"images/Fishing-2.jpg",
+	 "link" :"images/Fishing-2.jpg",
+	 "title":"Fishing redux."
+	},
+	{
+	 "thumb":"images/thumbnails/Bianka3.jpg",
+	  "large":"images/Bianka3.jpg",
+	  "title":"Bianka (Bianka Magyar) invites the boys to go swimming.",
+	  "link":"images/Bianka3.jpg"
+	},
+	{
+	 "thumb":"images/thumbnails/Quartet.jpg",
+	 "large":"images/Quartet.jpg",
+	 "link" :"images/Quartet.jpg",
+	 "title":"The cast: David Ternyak, Istvan Wosinski, Endre Andras Simon, and Bianka Magyar."
+	},
+	{
+	 "thumb":"images/thumbnails/8-11-2007-9-40-36-AM_0061.jpg",
+	 "large":"images/8-11-2007-9-40-36-AM_0061.jpg",
+	 "link" :"images/8-11-2007-9-40-36-AM_0061.jpg",
+	 "title":"Bianka Magyar relaxes on the set."
+	},
+	{
+	 "thumb":"images/thumbnails/8-11-2007-9-41-58-AM_0066.jpg",
+	 "large":"images/8-11-2007-9-41-58-AM_0066.jpg",
+	 "link" :"images/8-11-2007-9-41-58-AM_0066.jpg",
+	 "title":"Endre Andras Simon and Istvan Wosinski on set."
+	},
+	{
+	 "thumb":"images/thumbnails/8-26-2007-12-30-08-PM_0128.jpg",
+	 "large":"images/8-26-2007-12-30-08-PM_0128.jpg",
+	 "link" :"images/8-26-2007-12-30-08-PM_0128.jpg",
+	 "title":"David Ternyak teaches Thomas Edgington some new tricks."
+	},
+	{
+	 "thumb":"images/thumbnails/8-26-2007-12-58-35-PM_0137.jpg",
+	 "large":"images/8-26-2007-12-58-35-PM_0137.jpg",
+	 "link" :"images/8-26-2007-12-58-35-PM_0137.jpg",
+	 "title":"Producer Emoke Szalai"
+	},
+	{
+	 "thumb":"images/thumbnails/8-26-2007-12-58-53-PM_0138.jpg",
+	 "large":"images/director.jpg",
+	 "link" :"images/director.jpg",
+	 "title":"Director Mark Edgington"
+	}
+]}

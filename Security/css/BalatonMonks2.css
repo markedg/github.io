@@ -1,0 +1,57 @@
+@charset "UTF-8";
+/* CSS Document */
+
+body {
+	font-family:Georgia, "Times New Roman", Times, serif;
+	color: #eeeedd;
+	background-color: #000000;
+	width: 642px;
+	padding-left: 50%;
+}
+li {
+	list-style-type:none;
+}
+
+#container {
+	text-align: center;
+	background-color: #000000;
+	width: 642px;
+	margin-left: -321px;
+	padding: 20px 0px;
+	border: none;
+}
+#slideshow1 {
+	padding: 0px;
+}
+.slideShowNav {
+	display: none;
+}
+#slideshow1 img {
+	border: 1px solid #eeeedd;
+}
+.slideShowWrapper {
+	background: none;
+	border: none;
+}
+/*
+#slideshowContainer {
+	margin-left: 29px;
+}
+*/
+a:link { 
+	color: #eeeedd;
+	text-decoration: none;
+}
+a:visited { 
+	color: #eeeedd;
+	text-decoration: none;
+}
+a:hover, a:active { 
+	color: #998866;
+	text-decoration: underline;
+}
+.footerLinks {
+	font-variant:small-caps;
+	font-size:smaller;
+	margin: 10px;
+}

@@ -1,0 +1,65 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+	<title>Testing dojox.image.SlideShow</title>
+
+	<style type="text/css">
+		@import "dojo-release-1.0.2/dojox/image/resources/image.css";
+	</style>
+	
+	<script type="text/javascript" src="dojo-release-1.0.2/dojo/dojo.js" djconfig="parseOnLoad:false, usePlainJson:true"></script>
+	<script type="text/javascript" src="dojo-release-1.0.2/dojox/image/SlideShow.js"></script>
+	<script type="text/javascript" src="dojo-release-1.0.2/dojo/data/ItemFileReadStore.js"></script>	
+
+	<script type="text/javascript">
+		// dojo.require("dojox.image.SlideShow");
+		// dojo.require("dojox.data.FlickrRestStore");
+		// dojo.require("dojo.data.ItemFileReadStore"); 
+		dojo.require("dojo.parser");	// find widgets		
+		
+		dojo.addOnLoad(function(){
+			//Initialize the first SlideShow with an ItemFileReadStore
+			dojo.parser.parse(dojo.body());
+			dijit.byId('slideshow1').setDataStore(imageItemStore,
+				{ query: {}, count:20 },
+				{
+					imageThumbAttr: "thumb",
+					imageLargeAttr: "large"
+				}
+			);
+			handler = dojo.subscribe(
+    			dijit.byId('slideshow1').getShowTopicName(),
+    			function(packet) {
+					dojo.unsubscribe(handler);
+					setTimeout(dojo.hitch(dijit.byId('slideshow1'), "toggleSlideShow"), dijit.byId('slideshow1').slideshowInterval * 1000);
+			});
+			
+		});
+			
+	</script>
+<link href="css/BalatonMonks.css" rel="stylesheet" type="text/css" media="screen"/>
+</head>
+<body>
+<div id="container">
+<h1>The Balaton Monks</h1>
+<h3>A film by Mark Edgington</h3>
+<div id="slideshowContainer">
+	<div jsId="imageItemStore" dojoType="dojo.data.ItemFileReadStore" url="images.json"></div>
+	<!--
+	<div id="slideshow1" dojoType="dojox.image.SlideShow" hasNav="false" imageWidth="100%" noLink="true"></div>
+	-->
+	<div id="slideshow1" dojoType="dojox.image.SlideShow" hasNav="false" noLink="true" imageWidth="642"></div>
+</div>
+<ul>
+	<li>
+		<a href="credits.html">Credits</a>
+    </li>
+    <li><a href="bio.html">Filmmaker's Bio</a></li>
+    <li><a href="stills.html">Stills</a></li>
+    <li>Screenings</li>
+    <li><a href="contact.html">Contact</a></li>
+</ul>
+</div>
+</body>
+</html>
