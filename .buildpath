@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<buildpath>
+	<buildpathentry kind="src" path="BalatonMonks/dojo-release-1.0.2/dijit/bench"/>
+	<buildpathentry kind="src" path="BalatonMonks/dojo-release-1.0.2/dijit/tests/layout"/>
+	<buildpathentry kind="src" path="BalatonMonks/dojo-release-1.0.2/dojo/tests/_base"/>
+	<buildpathentry kind="src" path="BalatonMonks/dojo-release-1.0.2/dojo/tests/resources"/>
+	<buildpathentry kind="src" path="BalatonMonks/dojo-release-1.0.2/dojox/data/tests/stores"/>
+	<buildpathentry kind="src" path="BalatonMonks/dojo-release-1.0.2/dojox/grid/tests/support"/>
+	<buildpathentry kind="src" path="BalatonMonks/dojo-release-1.0.2/dojox/layout/tests/remote"/>
+	<buildpathentry kind="src" path="BalatonMonks/dojo-release-1.0.2/dojox/widget/FileInput"/>
+	<buildpathentry kind="src" path="BalatonMonks/dojo-release-1.0.2/dojox/widget/Loader"/>
+	<buildpathentry kind="src" path="BalatonMonks/facebook"/>
+	<buildpathentry kind="con" path="org.eclipse.php.core.LANGUAGE"/>
+</buildpath>
